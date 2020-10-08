@@ -16,9 +16,24 @@ const RECORDS = [
         coverSrc: "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/a1/e8/d0/a1e8d0ea-8703-0fda-f7c9-450a4223a610/source/512x512bb.jpg",
     },
     {
+        title: "heart of glass",
+        url: "https://soundcloud.com/ruairidx/sets/heart-of-glass-music-to-call",
+        coverSrc: "https://i1.sndcdn.com/artworks-0h41w1GXLo75krhi-Vi2OVg-t500x500.jpg",
+    },
+    {
         title: "the ice beneath our feet",
         url: "https://song.link/i/1517129664",
         coverSrc: "https://is3-ssl.mzstatic.com/image/thumb/Music123/v4/36/3c/b7/363cb7d6-231b-570a-bfbf-45e238ff2a10/source/512x512bb.jpg",
+    },
+    {
+        title: "marco",
+        url: "https://soundcloud.com/ruairidx/sets/marco",
+        coverSrc: "https://i1.sndcdn.com/artworks-000476181483-vossfh-t500x500.jpg",
+    },
+    {
+        title: "allyouneed",
+        url: "https://soundcloud.com/ruairidx/sets/allyouneed",
+        coverSrc: "https://i1.sndcdn.com/artworks-000435973758-b6mmtw-t500x500.jpg",
     },
 ]
 
@@ -56,10 +71,10 @@ const Music = () => (
                     gutter: 16,
                     xs: 1,
                     sm: 2,
-                    md: 2,
-                    lg: 3,
-                    xl: 3,
-                    xxl: 3,
+                    md: 3,
+                    lg: 4,
+                    xl: 4,
+                    xxl: 4,
                 }}
                 dataSource={RECORDS}
                 renderItem={record => (
