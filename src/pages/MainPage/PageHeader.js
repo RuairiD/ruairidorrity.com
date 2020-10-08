@@ -18,7 +18,7 @@ const SOCIALS = [
     },
     {
         icon: (<MailOutlined />),
-        url: "mailto:me@ruairidorrity.com",
+        url: "mailto:ruairidorrity@gmail.com",
     },
 ];
 

@@ -49,7 +49,7 @@ const Music = () => (
     <Layout>
         <Layout.Content>
             <Typography.Paragraph>
-                I release music under the name <Typography.Text strong>ruairi dx</Typography.Text>, both self-released and through small labels like <ExternalLink href="https://www.nightswimradio.com/">Night Swim Radio</ExternalLink>, <ExternalLink href="https://twitter.com/smilehighclubCA">The Smile High Club</ExternalLink> and <ExternalLink href="https://phuturecollective.com/">Phuture Collective</ExternalLink>.
+                I release music under the name <Typography.Text strong>ruairi dx</Typography.Text>, both self-released and through small labels such as <ExternalLink href="https://www.nightswimradio.com/">Night Swim Radio</ExternalLink>, <ExternalLink href="https://twitter.com/smilehighclubCA">The Smile High Club</ExternalLink> and <ExternalLink href="https://phuturecollective.com/">Phuture Collective</ExternalLink>.
             </Typography.Paragraph>
             <List
                 grid={{
