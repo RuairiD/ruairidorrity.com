@@ -1,0 +1,46 @@
+@import '~antd/dist/antd.css';
+
+html, body, #root, #root>div {
+    height: 100vh;
+}
+
+.page-container {
+    display: flex;
+}
+
+.page-container-inner {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-content {
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+.content {
+    padding: 2em;
+    max-width: 900px;
+    width: 100%;
+    height: 100%;
+    font-family: 'MetropolisRegular';
+}
+
+.page-header {
+    text-align: center;
+}
+
+h1.page-header__title.ant-typography {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.ant-typography + h5.ant-typography.page-header__pronunciation {
+    margin-top: 0;
+    font-family: serif;
+}
+
+.social-link a {
+    padding: 1em;
+    color: black;
+}
