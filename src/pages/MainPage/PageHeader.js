@@ -37,7 +37,7 @@ const PageHeader = () => (
             ruairi dorrity
         </Typography.Title>
         <Typography.Title level={5} className="page-header__pronunciation">
-            /rɔːri dɒrɪti/
+            /rɔːri dɒɻɪti/
         </Typography.Title>
         <Typography.Title level={4}>
             {SOCIALS.map((social, i) => 
