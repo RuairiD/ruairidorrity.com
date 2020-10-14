@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Typography } from 'antd';
 import { GithubOutlined, LinkedinOutlined, MailOutlined } from '@ant-design/icons';
+import { Span, Div } from 'lemon-reset';
 
 
 import ExternalLink from '../../components/ExternalLink/ExternalLink';
@@ -26,13 +27,13 @@ const SocialLink = ({
     icon,
     url,
 }) => (
-    <span className="social-link">
+    <Span className="social-link">
         <ExternalLink href={url}>{icon}</ExternalLink>
-    </span>
+    </Span>
 )
 
 const PageHeader = () => (
-    <div className="page-header">
+    <Div className="page-header">
         <Typography.Title className="page-header__title">
             ruairi dorrity
         </Typography.Title>
@@ -44,7 +45,7 @@ const PageHeader = () => (
                 <SocialLink key={i} {...social} />
             )}
         </Typography.Title>
-    </div>
+    </Div>
 );
 
 export default PageHeader;

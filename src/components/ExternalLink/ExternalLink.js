@@ -1,13 +1,14 @@
 import React from 'react';
+import { A } from 'lemon-reset';
 
 // Reusable <a> wrapper to avoid having the set `target` and `rel` everywhere.
 const ExternalLink = ({
     href,
     children
 }) => (
-    <a target="_blank" rel="noopener noreferrer" href={href}>
+    <A target="_blank" rel="noopener noreferrer" href={href}>
         {children}
-    </a>
+    </A>
 );
 
 export default ExternalLink;

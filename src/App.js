@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import HttpsRedirect from 'react-https-redirect';
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 
 import './App.css';

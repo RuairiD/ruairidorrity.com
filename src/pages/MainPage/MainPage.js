@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Divider, Layout } from 'antd';
+import { Div } from 'lemon-reset';
 
 
 import About from '../../components/About/About';
@@ -10,7 +11,7 @@ import ExternalLink from '../../components/ExternalLink/ExternalLink';
 
 const MainPage = () => (
     <Layout className="page-container">
-        <div className="page-container-inner">
+        <Div className="page-container-inner">
             <Layout.Content className="page-content">
                 <Layout className="content">
                     <PageHeader />
@@ -24,7 +25,7 @@ const MainPage = () => (
                 <Divider />
                 <ExternalLink href="https://github.com/ruairid/ruairidorrity.com">source</ExternalLink>
             </Layout.Footer>
-        </div>
+        </Div>
     </Layout>
 );
 

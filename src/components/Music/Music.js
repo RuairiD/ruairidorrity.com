@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Card, Layout, List, Typography } from 'antd';
+import { Img } from 'lemon-reset';
 
 import ExternalLink from '../ExternalLink/ExternalLink';
 
@@ -43,7 +44,7 @@ const Thumbnail = ({
     coverSrc,
 }) => (
     <ExternalLink href={url}>
-        <img alt={title} style={{ width: "100%" }} src={coverSrc} />
+        <Img alt={title} style={{ width: "100%" }} src={coverSrc} />
     </ExternalLink>
 );
 
