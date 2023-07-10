@@ -1,11 +1,84 @@
 import React from 'react';
 
 import { Avatar, List, Typography } from 'antd';
-import { A, Div } from 'lemon-reset';
+import { Div, Img } from 'lemon-reset';
 
 import ExternalLink from '../ExternalLink/ExternalLink';
 
+const BANG_AVERAGE_FOOTBALL_SCREENSHOTS = [
+    {
+        src: '/bang_average_football/screenshots/1.png',
+        alt: '',
+    },
+    {
+        src: '/bang_average_football/screenshots/2.png',
+        alt: '',
+    },
+    {
+        src: '/bang_average_football/screenshots/3.png',
+        alt: '',
+    },
+    {
+        src: '/bang_average_football/screenshots/4.png',
+        alt: '',
+    },
+    {
+        src: '/bang_average_football/screenshots/5.png',
+        alt: '',
+    },
+    {
+        src: '/bang_average_football/screenshots/6.png',
+        alt: '',
+    },
+    {
+        src: '/bang_average_football/screenshots/7.png',
+        alt: '',
+    },
+    {
+        src: '/bang_average_football/screenshots/8.png',
+        alt: '',
+    },
+];
+
 const PROJECTS = [
+    {
+        title: "bang average football",
+        url: "https://bangaverage.games/football",
+        description: (
+            <Div>
+                <Typography.Paragraph>
+                    I'm currently developing <Typography.Text strong>Bang Average Football</Typography.Text>, a fast-paced, easy-to-learn football game for Windows, Mac and Linux. Play against your friends for footballing glory in multiplayer, or turn a hopeless club into national champions as player-manager in Story mode!
+                </Typography.Paragraph>
+                <Typography.Paragraph>
+                    <ExternalLink href="https://bangaverage.games/football">website</ExternalLink> - <ExternalLink href="https://store.steampowered.com/app/2393770/Bang_Average_Football/">steam</ExternalLink>
+                </Typography.Paragraph>
+                <List
+                    grid={{
+                        gutter: 16,
+                        xs: 1,
+                        sm: 2,
+                        md: 3,
+                        lg: 4,
+                        xl: 4,
+                        xxl: 4,
+                    }}
+                    dataSource={BANG_AVERAGE_FOOTBALL_SCREENSHOTS}
+                    renderItem={(screenshot) => (
+                        <List.Item>
+                            <ExternalLink href={screenshot.src}>
+                                <Img
+                                    src={screenshot.src}
+                                    alt={screenshot.alt}
+                                    style={{ width: "100%" }}
+                                />
+                            </ExternalLink>
+                        </List.Item>
+                    )}
+                />
+            </Div>
+        ),
+        avatarSrc: "/bang_average_football/icon.png",
+    },
     {
         title: "how's my track?",
         url: "https://www.howsmytrack.com",
@@ -20,21 +93,6 @@ const PROJECTS = [
             </Div>
         ),
         avatarSrc: "https://www.howsmytrack.com/logo128.png",
-    },
-    {
-        title: "picotracker",
-        url: "https://picotracker.ruairidx.com",
-        description: (
-            <Div>
-                <Typography.Paragraph>
-                    <Typography.Text strong>picotracker</Typography.Text> is a game discovery system for the <A target="_blank" rel="noopener noreferrer" href="https://www.lexaloffle.com/pico-8.php">PICO-8</A> fantasy console. Games are conventionally published on the official BBS/forum, which does not offer any much in the way of sophisticated sorting. <Typography.Text strong>picotracker</Typography.Text> aims to remedy this by regularly checking the BBS for new games and tracking them with a custom rating system that prioritises games with high engagement, while penalising less recent games.
-                </Typography.Paragraph>
-                <Typography.Paragraph>
-                    source: <ExternalLink href="https://github.com/ruairid/picotracker-api">api</ExternalLink> - <ExternalLink href="https://github.com/ruairid/picotracker-web">web</ExternalLink>
-                </Typography.Paragraph>
-            </Div>
-        ),
-        avatarSrc: "https://picotracker.ruairidx.com/logo192.png",
     },
 ]
 
