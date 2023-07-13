@@ -1,1 +1,1 @@
-declare module 'lemon-reset';
+declare module "lemon-reset";

@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import { Card, Layout, List, Typography } from 'antd';
-import { Img } from 'lemon-reset';
+import { Card, Layout, List, Typography } from "antd";
+import { Img } from "lemon-reset";
 
-import ExternalLink from '../ExternalLink/ExternalLink';
+import ExternalLink from "../ExternalLink/ExternalLink";
 
 type Record = {
     title: string;
@@ -42,7 +42,7 @@ const RECORDS: Array<Record> = [
         url: "https://soundcloud.com/ruairidx/sets/allyouneed",
         coverSrc: "https://i1.sndcdn.com/artworks-000435973758-b6mmtw-t500x500.jpg",
     },
-]
+];
 
 const Thumbnail = ({
     title,
@@ -59,7 +59,7 @@ const RecordItem = ({
     url,
     coverSrc,
 }: Record) => (
-    <Card style={{ width: '100%' }} cover={<Thumbnail title={title} url={url} coverSrc={coverSrc} />}>
+    <Card style={{ width: "100%" }} cover={<Thumbnail title={title} url={url} coverSrc={coverSrc} />}>
         <Card.Meta
             title={title}
             description={<ExternalLink href={url}>Stream</ExternalLink>}
@@ -76,12 +76,12 @@ const Music = () => (
             <List
                 grid={{
                     gutter: 16,
-                    xs: 1,
-                    sm: 2,
+                    xs: 2,
+                    sm: 3,
                     md: 3,
-                    lg: 4,
-                    xl: 4,
-                    xxl: 4,
+                    lg: 3,
+                    xl: 3,
+                    xxl: 3,
                 }}
                 dataSource={RECORDS}
                 renderItem={record => (

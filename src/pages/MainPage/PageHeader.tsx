@@ -1,14 +1,17 @@
-import React from 'react';
+import React from "react";
 
-import { Typography } from 'antd';
-import { GithubOutlined, LinkedinOutlined, MailOutlined } from '@ant-design/icons';
-import { Span, Div } from 'lemon-reset';
+import { Typography } from "antd";
+import { GithubOutlined, LinkedinOutlined, MailOutlined } from "@ant-design/icons";
+import { Span, Div } from "lemon-reset";
 
+import ExternalLink from "../../components/ExternalLink/ExternalLink";
 
-import ExternalLink from '../../components/ExternalLink/ExternalLink';
+type Social = {
+    icon: React.ReactNode;
+    url: string;
+}
 
-
-const SOCIALS = [
+const SOCIALS: Array<Social> = [
     {
         icon: (<GithubOutlined />),
         url: "https://github.com/RuairiD",
@@ -26,11 +29,11 @@ const SOCIALS = [
 const SocialLink = ({
     icon,
     url,
-}) => (
+}: Social) => (
     <Span className="social-link">
         <ExternalLink href={url}>{icon}</ExternalLink>
     </Span>
-)
+);
 
 const PageHeader = () => (
     <Div className="page-header">

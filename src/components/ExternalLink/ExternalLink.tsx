@@ -1,5 +1,5 @@
-import React, { PropsWithChildren } from 'react';
-import { A } from 'lemon-reset';
+import React, { PropsWithChildren } from "react";
+import { A } from "lemon-reset";
 
 // Reusable <a> wrapper to avoid having the set `target` and `rel` everywhere.
 const ExternalLink = ({

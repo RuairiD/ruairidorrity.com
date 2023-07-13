@@ -1,13 +1,11 @@
-import React from 'react';
+import React from "react";
 
-import { Divider, Layout } from 'antd';
-import { Div } from 'lemon-reset';
+import { Divider, Layout } from "antd";
+import { Div } from "lemon-reset";
 
-
-import About from '../../components/About/About';
-import PageHeader from './PageHeader';
-import ExternalLink from '../../components/ExternalLink/ExternalLink';
-
+import About from "../../components/About/About";
+import PageHeader from "./PageHeader";
+import ExternalLink from "../../components/ExternalLink/ExternalLink";
 
 const MainPage = () => (
     <Layout className="page-container">
@@ -21,7 +19,7 @@ const MainPage = () => (
                     </Layout.Content>
                 </Layout>
             </Layout.Content>
-            <Layout.Footer style={{ textAlign: 'center' }}>
+            <Layout.Footer style={{ textAlign: "center" }}>
                 <Divider />
                 <ExternalLink href="https://github.com/ruairid/ruairidorrity.com">source</ExternalLink>
             </Layout.Footer>

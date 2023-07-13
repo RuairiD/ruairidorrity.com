@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import { Avatar, List, Typography } from 'antd';
-import { Div, Img } from 'lemon-reset';
+import { Avatar, List, Typography } from "antd";
+import { Div, Img } from "lemon-reset";
 
-import ExternalLink from '../ExternalLink/ExternalLink';
+import ExternalLink from "../ExternalLink/ExternalLink";
 
 type BangAverageFootballScreenshot = {
     src: string;
@@ -12,36 +12,36 @@ type BangAverageFootballScreenshot = {
 
 const BANG_AVERAGE_FOOTBALL_SCREENSHOTS: Array<BangAverageFootballScreenshot> = [
     {
-        src: '/bang_average_football/screenshots/1.png',
-        alt: '',
+        src: "/bang_average_football/screenshots/1.png",
+        alt: "A football player dribbles the ball out of midfield in a two player multiplayer match.",
     },
     {
-        src: '/bang_average_football/screenshots/2.png',
-        alt: '',
+        src: "/bang_average_football/screenshots/2.png",
+        alt: "Two players configure their starting lineups and team formations.",
     },
     {
-        src: '/bang_average_football/screenshots/3.png',
-        alt: '',
+        src: "/bang_average_football/screenshots/3.png",
+        alt: "A football player celebrates scoring a goal with her teammates.",
     },
     {
-        src: '/bang_average_football/screenshots/4.png',
-        alt: '',
+        src: "/bang_average_football/screenshots/4.png",
+        alt: "A player browses the main menu for their team in Story mode.",
     },
     {
-        src: '/bang_average_football/screenshots/5.png',
-        alt: '',
+        src: "/bang_average_football/screenshots/5.png",
+        alt: "A player controls and watches an instant replay from an in-progress match.",
     },
     {
-        src: '/bang_average_football/screenshots/6.png',
-        alt: '',
+        src: "/bang_average_football/screenshots/6.png",
+        alt: "A football player takes a corner, and the rest of the players wait to receive it in the centre.",
     },
     {
-        src: '/bang_average_football/screenshots/7.png',
-        alt: '',
+        src: "/bang_average_football/screenshots/7.png",
+        alt: "A football player receives a yellow card from the referee.",
     },
     {
-        src: '/bang_average_football/screenshots/8.png',
-        alt: '',
+        src: "/bang_average_football/screenshots/8.png",
+        alt: "A player attempts a training drill where they must make accurate passes to a dummy.",
     },
 ];
 
@@ -67,9 +67,9 @@ const PROJECTS: Array<Project> = [
                 <List
                     grid={{
                         gutter: 16,
-                        xs: 1,
+                        xs: 2,
                         sm: 2,
-                        md: 3,
+                        md: 4,
                         lg: 4,
                         xl: 4,
                         xxl: 4,
@@ -80,7 +80,7 @@ const PROJECTS: Array<Project> = [
                             <ExternalLink href={screenshot.src}>
                                 <Img
                                     src={screenshot.src}
-                                    alt={screenshot.alt}
+                                    alt={`Screenshot of Bang Average Football - ${screenshot.alt}`}
                                     style={{ width: "100%" }}
                                 />
                             </ExternalLink>
@@ -106,7 +106,7 @@ const PROJECTS: Array<Project> = [
         ),
         avatarSrc: "https://www.howsmytrack.com/logo128.png",
     },
-]
+];
 
 const Projects = () => (
     <List
@@ -115,9 +115,9 @@ const Projects = () => (
         renderItem={project => (
             <List.Item>
                 <List.Item.Meta
-                  avatar={<Avatar size="large" src={project.avatarSrc} />}
-                  title={<ExternalLink href={project.url}>{project.title}</ExternalLink>}
-                  description={project.description}
+                    avatar={<Avatar size="large" src={project.avatarSrc} />}
+                    title={<ExternalLink href={project.url}>{project.title}</ExternalLink>}
+                    description={project.description}
                 />
             </List.Item>
         )}
