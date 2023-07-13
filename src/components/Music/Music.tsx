@@ -5,7 +5,13 @@ import { Img } from 'lemon-reset';
 
 import ExternalLink from '../ExternalLink/ExternalLink';
 
-const RECORDS = [
+type Record = {
+    title: string;
+    url: string;
+    coverSrc: string;
+}
+
+const RECORDS: Array<Record> = [
     {
         title: "waiting for bad news ep",
         url: "https://album.link/i/1484568549",
@@ -42,17 +48,17 @@ const Thumbnail = ({
     title,
     url,
     coverSrc,
-}) => (
+}: Record) => (
     <ExternalLink href={url}>
         <Img alt={title} style={{ width: "100%" }} src={coverSrc} />
     </ExternalLink>
 );
 
-const Record = ({
+const RecordItem = ({
     title,
     url,
     coverSrc,
-}) => (
+}: Record) => (
     <Card style={{ width: '100%' }} cover={<Thumbnail title={title} url={url} coverSrc={coverSrc} />}>
         <Card.Meta
             title={title}
@@ -80,7 +86,7 @@ const Music = () => (
                 dataSource={RECORDS}
                 renderItem={record => (
                     <List.Item>
-                        <Record {...record} />
+                        <RecordItem {...record} />
                     </List.Item>
                 )}
             />

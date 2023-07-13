@@ -5,7 +5,12 @@ import { Div, Img } from 'lemon-reset';
 
 import ExternalLink from '../ExternalLink/ExternalLink';
 
-const BANG_AVERAGE_FOOTBALL_SCREENSHOTS = [
+type BangAverageFootballScreenshot = {
+    src: string;
+    alt: string;
+};
+
+const BANG_AVERAGE_FOOTBALL_SCREENSHOTS: Array<BangAverageFootballScreenshot> = [
     {
         src: '/bang_average_football/screenshots/1.png',
         alt: '',
@@ -40,7 +45,14 @@ const BANG_AVERAGE_FOOTBALL_SCREENSHOTS = [
     },
 ];
 
-const PROJECTS = [
+type Project = {
+    title: string;
+    url: string;
+    description: React.ReactNode;
+    avatarSrc: string;
+}
+
+const PROJECTS: Array<Project> = [
     {
         title: "bang average football",
         url: "https://bangaverage.games/football",
