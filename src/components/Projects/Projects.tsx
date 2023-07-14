@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Avatar, List, Typography } from "antd";
-import { Div, Img } from "lemon-reset";
+import { Avatar, List, Typography, Image } from "antd";
+import { Div } from "lemon-reset";
 
 import ExternalLink from "../ExternalLink/ExternalLink";
 
@@ -64,29 +64,29 @@ const PROJECTS: Array<Project> = [
                 <Typography.Paragraph>
                     <ExternalLink href="https://bangaverage.games/football">website</ExternalLink> - <ExternalLink href="https://store.steampowered.com/app/2393770/Bang_Average_Football/">steam</ExternalLink>
                 </Typography.Paragraph>
-                <List
-                    grid={{
-                        gutter: 16,
-                        xs: 2,
-                        sm: 2,
-                        md: 4,
-                        lg: 4,
-                        xl: 4,
-                        xxl: 4,
-                    }}
-                    dataSource={BANG_AVERAGE_FOOTBALL_SCREENSHOTS}
-                    renderItem={(screenshot) => (
-                        <List.Item>
-                            <ExternalLink href={screenshot.src}>
-                                <Img
+                <Image.PreviewGroup>
+                    <List
+                        grid={{
+                            gutter: 16,
+                            xs: 2,
+                            sm: 2,
+                            md: 4,
+                            lg: 4,
+                            xl: 4,
+                            xxl: 4,
+                        }}
+                        dataSource={BANG_AVERAGE_FOOTBALL_SCREENSHOTS}
+                        renderItem={(screenshot) => (
+                            <List.Item>
+                                <Image
                                     src={screenshot.src}
                                     alt={`Screenshot of Bang Average Football - ${screenshot.alt}`}
                                     style={{ width: "100%" }}
                                 />
-                            </ExternalLink>
-                        </List.Item>
-                    )}
-                />
+                            </List.Item>
+                        )}
+                    />
+                </Image.PreviewGroup>
             </Div>
         ),
         avatarSrc: "/bang_average_football/icon.png",
