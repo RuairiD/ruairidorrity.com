@@ -1,7 +1,6 @@
-@import '~antd/dist/antd.css';
-
 html, body, #root, #root>div {
     height: 100vh;
+    width: 100vw;
 }
 
 .page-container {

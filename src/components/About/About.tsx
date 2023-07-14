@@ -1,10 +1,24 @@
-import React from "react";
-
 import { Layout, Typography, Tabs, Tooltip } from "antd";
 
 import Projects from "../Projects/Projects";
 import Music from "../Music/Music";
 import ExternalLink from "../ExternalLink/ExternalLink";
+
+const TABS = [
+    {
+        label: "Projects",
+        children: <Projects />
+    },
+    {
+        label: "Music",
+        children: <Music />
+    },
+].map((tab) => {
+    return{
+        ...tab,
+        key: tab.label,
+    };
+});
 
 const About = () => (
     <Layout>
@@ -16,14 +30,7 @@ const About = () => (
             <Typography.Paragraph>
                 Sometimes I do other stuff as well:
             </Typography.Paragraph>
-            <Tabs defaultActiveKey="1">
-                <Tabs.TabPane tab="Projects" key="1">
-                    <Projects />
-                </Tabs.TabPane>
-                <Tabs.TabPane tab="Music" key="2">
-                    <Music />
-                </Tabs.TabPane>
-            </Tabs>
+            <Tabs defaultActiveKey="Projects" items={TABS}/>
         </Layout.Content>
     </Layout>
 );

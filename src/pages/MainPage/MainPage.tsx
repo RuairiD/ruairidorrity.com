@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Divider, Layout } from "antd";
 import { Div } from "lemon-reset";
 

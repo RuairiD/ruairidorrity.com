@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Card, Layout, List, Typography } from "antd";
 import { Img } from "lemon-reset";
 

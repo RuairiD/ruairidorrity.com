@@ -1,4 +1,3 @@
-import React from "react";
 import HttpsRedirect from "react-https-redirect";
 import {
     createBrowserRouter,
@@ -6,7 +5,7 @@ import {
     RouterProvider,
 } from "react-router-dom";
 
-
+import "antd/dist/antd.css";
 import "./App.css";
 import MainPage from "./pages/MainPage/MainPage";
 
