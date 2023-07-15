@@ -1,4 +1,3 @@
-import HttpsRedirect from "react-https-redirect";
 import {
     createBrowserRouter,
     redirect,
@@ -30,9 +29,7 @@ const router = createBrowserRouter([
 
 function App() {
     return (
-        <HttpsRedirect>
-            <RouterProvider router={router} />
-        </HttpsRedirect>
+        <RouterProvider router={router} />
     );
 }
 
