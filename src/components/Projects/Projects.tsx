@@ -55,14 +55,14 @@ type Project = {
 const PROJECTS: Array<Project> = [
     {
         title: "bang average football",
-        url: "https://bangaverage.games/football",
+        url: "https://www.ruairidx.com/bangaveragefootball",
         description: (
             <Div>
                 <Typography.Paragraph>
-                    I'm currently developing <Typography.Text strong>Bang Average Football</Typography.Text>, a fast-paced, easy-to-learn football game for Windows, Mac and Linux. Play against your friends for footballing glory in multiplayer, or turn a hopeless club into national champions as player-manager in Story mode!
+                    I'm currently developing <Typography.Text strong>Bang Average Football</Typography.Text>, a fast-paced, easy-to-learn football game which is out May 10th 2024 for Windows, Mac and Linux. Play against your friends for footballing glory in multiplayer, or turn a hopeless club into national champions as player-manager in Story mode!
                 </Typography.Paragraph>
                 <Typography.Paragraph>
-                    <ExternalLink href="https://bangaverage.games/football">website</ExternalLink> - <ExternalLink href="https://store.steampowered.com/app/2393770/Bang_Average_Football/">steam</ExternalLink>
+                    <ExternalLink href="https://www.ruairidx.com/bangaveragefootball">website</ExternalLink> - <ExternalLink href="https://store.steampowered.com/app/2393770/Bang_Average_Football/">steam</ExternalLink>
                 </Typography.Paragraph>
                 <Image.PreviewGroup>
                     <List
