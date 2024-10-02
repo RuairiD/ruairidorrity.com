@@ -12,36 +12,36 @@ type BangAverageFootballScreenshot = {
 
 const BANG_AVERAGE_FOOTBALL_SCREENSHOTS: Array<BangAverageFootballScreenshot> = [
     {
-        src: "/bang_average_football/screenshots/1.png",
+        src: "/bang_average_football/screenshots/01_Match.png",
         alt: "A football player dribbles the ball out of midfield in a two player multiplayer match.",
     },
     {
-        src: "/bang_average_football/screenshots/2.png",
+        src: "/bang_average_football/screenshots/02_TacticsMultiplayer.png",
         alt: "Two players configure their starting lineups and team formations.",
     },
     {
-        src: "/bang_average_football/screenshots/3.png",
-        alt: "A football player celebrates scoring a goal with her teammates.",
+        src: "/bang_average_football/screenshots/03_Horston.png",
+        alt: "A player observes two groups of NPCs arguing in a city.",
     },
     {
-        src: "/bang_average_football/screenshots/4.png",
+        src: "/bang_average_football/screenshots/04_League.png",
         alt: "A player browses the main menu for their team in Story mode.",
     },
     {
-        src: "/bang_average_football/screenshots/5.png",
-        alt: "A player controls and watches an instant replay from an in-progress match.",
-    },
-    {
-        src: "/bang_average_football/screenshots/6.png",
+        src: "/bang_average_football/screenshots/05_MatchWithSponsors.png",
         alt: "A football player takes a corner, and the rest of the players wait to receive it in the centre.",
     },
     {
-        src: "/bang_average_football/screenshots/7.png",
-        alt: "A football player receives a yellow card from the referee.",
+        src: "/bang_average_football/screenshots/06_GoalWinter.png",
+        alt: "A football player celebrates scoring a goal with her teammates.",
     },
     {
-        src: "/bang_average_football/screenshots/8.png",
-        alt: "A player attempts a training drill where they must make accurate passes to a dummy.",
+        src: "/bang_average_football/screenshots/07_CreateTeam.png",
+        alt: "A player customises their team for Story mode.",
+    },
+    {
+        src: "/bang_average_football/screenshots/12_FreeKicks.png",
+        alt: "A player attempts a training drill where they must score free kicks.",
     },
 ];
 
@@ -59,7 +59,7 @@ const PROJECTS: Array<Project> = [
         description: (
             <Div>
                 <Typography.Paragraph>
-                    I'm currently developing <Typography.Text strong>Bang Average Football</Typography.Text>, a fast-paced, easy-to-learn football game which is out May 10th 2024 for Windows, Mac and Linux. Play against your friends for footballing glory in multiplayer, or turn a hopeless club into national champions as player-manager in Story mode!
+                    <Typography.Text strong>Bang Average Football</Typography.Text> is a fast-paced, easy-to-learn football game for 1-4 players, released on May 10th 2024 for Windows, Mac and Linux. Play against your friends for footballing glory in multiplayer, or turn a hopeless club into national champions as player-manager in Story mode!
                 </Typography.Paragraph>
                 <Typography.Paragraph>
                     <ExternalLink href="https://www.ruairidx.com/bangaveragefootball">website</ExternalLink> - <ExternalLink href="https://store.steampowered.com/app/2393770/Bang_Average_Football/">steam</ExternalLink>
